@@ -17,3 +17,7 @@ One point to remember is that we will only be using numbers represented with 4 b
 After removing the last bit from P we get our desired answer.
 So, Answer: 00000 01100 --> 12 = 4*3
 
+The proteus project file has been uploaded in the repo. We used D flip-flops to implement the circuit. The final design is:
+
+
+![Booth](https://user-images.githubusercontent.com/43475529/63702470-d946b100-c848-11e9-9a4b-3f5b02d33908.jpg)
