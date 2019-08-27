@@ -21,3 +21,6 @@ The proteus project file has been uploaded in the repo. We used D flip-flops to 
 
 
 ![Booth](https://user-images.githubusercontent.com/43475529/63702470-d946b100-c848-11e9-9a4b-3f5b02d33908.jpg)
+
+Note: If you see an error like "NO MODEL SPECIFIED FOR CLOCK#0045" in the Proteus project folder delete the clock object from the simulation and add another clock or a logic toggle or whatever suits you. The error will not persist.
+=
