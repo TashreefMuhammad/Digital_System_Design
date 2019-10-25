@@ -16,8 +16,7 @@
     - [Register B & Register Output](#register-b-&-register-output)
     - [Colck (CLK)](#clock)
     - [Clear (CLR)](#clear)
-3. Input Manipulation of SAP-1
-5. Step Guide
+3. [Input Manipulation of SAP-1](#input-manipulation-of-sap-1)
 
 ### General Design of SAP-1:
 A SAP-1 is capable of doing 5 operations. The commands can be written like:
@@ -50,7 +49,7 @@ HLT   -> 1000
 </pre>
 The general design without control words (Just the components) of SAP-1 can be shows like as follows:
 
-![OverLay](https://user-images.githubusercontent.com/43475529/67584556-bf095080-f76f-11e9-82f0-848df3b97437.png)
+![OverLay](https://user-images.githubusercontent.com/43475529/67601284-ca6f7280-f795-11e9-8032-17620f734904.png)
 
 The 12 bit control word will be explained later and they are very important for step controlling of SAP-1. Another important thing to remember is that though in all theoritical process, there is always written to be 12 control bits, we will be using another additional bit (In total 13 bits). The additional bit will help stop the SAP-1 when we order a **HLT** operation.
 
@@ -111,3 +110,18 @@ Both of them are just the same as [Accumulator A](#accumulator-a) except the tri
 The clock is used for providing clock pulse to the circuit.
 #### *Clear:*
 Clear sets all the values in circuit and let's the process start anew.
+
+### Input Manipulation of SAP-1:
+1. Create input file. I am going to create a BIN file. I will be using VS Code.
+    - Open VS Code, create new file. Save the file as filename.BIN and choose 'No Extension' in Save as type option.
+    - After that, go edit your file. I named my file as input.bin
+    - We will be using hexadecimal value system. So each one character we write will denote 4 bits (1 hexa digit = 4 binary digit)
+    - According to our desire and opcode design write the commands and values.
+2. Upload the input file into EPROM.
+    - Double click on the EPROM in your circuit.
+    - In the 'image file' option give the directory path of your input file. (in my case input.bin)
+    - After that add ",ASCHEX" so that the file may be read in Hexa Decimal form.
+I will try to explain this feature more elaborately using more visual attachments later on.
+
+And with that, we finally complete our SAP-1 simulation using Proteus 8.6 Professional.
+![SAP-1_Modified_Page_1](https://user-images.githubusercontent.com/43475529/67602277-18857580-f798-11e9-8ddf-cc3af3ecd5ec.jpg)
