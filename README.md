@@ -125,3 +125,6 @@ I will try to explain this feature more elaborately using more visual attachment
 
 And with that, we finally complete our SAP-1 simulation using Proteus 8.6 Professional.
 ![SAP-1_Modified_Page_1](https://user-images.githubusercontent.com/43475529/67602277-18857580-f798-11e9-8ddf-cc3af3ecd5ec.jpg)
+
+If you still think you don't get it, study theory, you probably have loads of lacking there.
+1 night studied theory, 1 night needed for making the simulation, and forever wondering how come some say it is way too difficult to make(?!)
